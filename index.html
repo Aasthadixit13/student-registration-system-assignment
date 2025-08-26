@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--  CSS -->
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    <!-- Header -->
+   
+<header class="d-flex justify-content-between align-items-center mx-auto py-3" style="max-width: 700px;">
+    <h1 class="mb-0"><i class="fa-solid fa-id-card"></i> Login</h1>
+    <button id="addBtn" class="btn btn-primary"><i class="fa-solid fa-user-plus"></i> Add Student</button>
+</header>
+
+
+
+    <!-- Main Container -->
+    <div class="container mt-4">
+        <h2 id="title">Student Registration System</h2>
+        <p id="description">Welcome to the Student Registration System. Easily register, update, and manage student details including name, ID, email, and contact number.</p>
+
+        <!-- Centered Student Box -->
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="student-list text-center" id="studentList">
+                    <p>No students registered yet. Click "Add Student" to get started!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dialog -->
+    <dialog id="studentDialog">
+        <button class="close-btn" id="closeDialog"><i class="fa-solid fa-xmark"></i></button>
+        <h2>Add Student</h2>
+        <form id="studentForm" method="dialog">
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <label for="id" class="form-label">Student ID:</label>
+                    <input type="number" id="id" class="form-control" required placeholder="12345">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" class="form-control" required placeholder="Aastha Dixt">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" class="form-control" required placeholder="dixitaastha13@gmail.com">
+                </div>
+                <div class="col-12">
+                    <label for="contact" class="form-label">Contact:</label>
+                    <input type="tel" id="contact" class="form-control" pattern="[0-9]{10}" maxlength="10" required
+                        placeholder="8602484566">
+                </div>
+            </div>
+            <div class="form-actions text-end mt-3">
+                <button type="reset" class="btn btn-danger">Clear</button>
+                <button type="submit" class="btn btn-warning text-white">Save</button>
+            </div>
+        </form>
+    </dialog>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Student Registration System. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- git hub project link :
+https://github.com/Aasthadixit13/student-registration-system-assignment.git -->
