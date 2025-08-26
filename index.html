@@ -45,31 +45,42 @@
     <dialog id="studentDialog">
         <button class="close-btn" id="closeDialog"><i class="fa-solid fa-xmark"></i></button>
         <h2>Add Student</h2>
-        <form id="studentForm" method="dialog">
+        <form id="studentForm">
             <div class="row g-3">
+                <!-- Student ID -->
                 <div class="col-12 col-md-6">
                     <label for="id" class="form-label">Student ID:</label>
-                    <input type="number" id="id" class="form-control" required placeholder="12345">
+                    <input type="number" id="id" name="id" class="form-control" required placeholder="12345">
                 </div>
+        
+                <!-- Student Name -->
                 <div class="col-12 col-md-6">
                     <label for="name" class="form-label">Name:</label>
-                    <input type="text" id="name" class="form-control" required placeholder="Aastha Dixt">
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="Aastha Dixit">
                 </div>
+        
+                <!-- Email -->
                 <div class="col-12">
                     <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" class="form-control" required placeholder="dixitaastha13@gmail.com">
+                    <input type="email" id="email" name="email" class="form-control" required
+                        placeholder="dixitaastha13@gmail.com">
                 </div>
+        
+                <!-- Contact -->
                 <div class="col-12">
                     <label for="contact" class="form-label">Contact:</label>
-                    <input type="tel" id="contact" class="form-control" pattern="[0-9]{10}" maxlength="10" required
-                        placeholder="8602484566">
+                    <input type="tel" id="contact" name="contact" class="form-control" pattern="[0-9]{10}" maxlength="10"
+                        required placeholder="8602484566">
                 </div>
             </div>
+        
+            <!-- Actions -->
             <div class="form-actions text-end mt-3">
                 <button type="reset" class="btn btn-danger">Clear</button>
                 <button type="submit" class="btn btn-warning text-white">Save</button>
             </div>
         </form>
+
     </dialog>
 
     <!-- Footer -->
@@ -87,4 +98,5 @@
 </html>
 
 <!-- git hub project link :
-https://github.com/Aasthadixit13/student-registration-system-assignment.git -->
+
+https://aasthadixit13.github.io/student-registration-system-assignment/ -->
